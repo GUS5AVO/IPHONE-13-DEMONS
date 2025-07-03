@@ -181,24 +181,14 @@
                 </h2>
                 
                 <div class="bg-gray-800 rounded-xl p-6 mb-8">
-                    <div class="grid gap-4">
-                        <div class="flex justify-between items-center bg-gray-700 rounded-lg p-4">
-                            <span class="font-bold">João Silva</span>
-                            <span class="text-blue-400 font-bold">2 números</span>
-                        </div>
-                        <div class="flex justify-between items-center bg-gray-700 rounded-lg p-4">
-                            <span class="font-bold">Ana Costa</span>
-                            <span class="text-blue-400 font-bold">5 números</span>
-                        </div>
-                        <div class="flex justify-between items-center bg-gray-700 rounded-lg p-4">
-                            <span class="font-bold">Luana Santos</span>
-                            <span class="text-blue-400 font-bold">1 número</span>
-                        </div>
-                    </div>
+                    <div id="rankingList" class="grid gap-4"></div>
                 </div>
-                
                 <p class="text-center text-gray-300">
-                    Ranking atual com prints dos compradores e prints fixados no grupo.
+                    Ranking atualizado diariamente. Prints das compras estão no grupo.
+                </p>
+                <p class="text-center text-gray-300 mt-4">
+                    Total de números vendidos: <span id="totalSold" class="font-bold text-blue-400">0</span><br>
+                    Total de participantes: <span id="participants" class="font-bold text-blue-400">0</span>
                 </p>
             </div>
         </section>
@@ -496,6 +486,36 @@
             
             messageIndex++;
         }, 8000);
+
+        // Ranking data
+        const rankingData = [
+            { name: 'Ana Costa', numbers: 7 },
+            { name: 'João Silva', numbers: 5 },
+            { name: 'Luana Santos', numbers: 4 },
+            { name: 'Carlos Oliveira', numbers: 3 },
+            { name: 'Maria Fernandes', numbers: 2 }
+        ];
+
+        function renderRanking() {
+            const rankingList = document.getElementById('rankingList');
+            rankingList.innerHTML = '';
+            rankingData.sort((a, b) => b.numbers - a.numbers);
+            rankingData.forEach((p, i) => {
+                const item = document.createElement('div');
+                item.className = 'flex justify-between items-center bg-gray-700 rounded-lg p-4';
+                item.innerHTML = `
+                    <span class="font-bold">${i + 1}. ${p.name}</span>
+                    <span class="text-blue-400 font-bold">${p.numbers} número${p.numbers > 1 ? 's' : ''}</span>
+                `;
+                rankingList.appendChild(item);
+            });
+
+            const totalSold = rankingData.reduce((sum, p) => sum + p.numbers, 0);
+            document.getElementById('totalSold').textContent = totalSold;
+            document.getElementById('participants').textContent = rankingData.length;
+        }
+
+        renderRanking();
         
 
         
