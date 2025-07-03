@@ -3,29 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cassino Real - Primeira Campanha</title>
+    <title>Sorteio Real - Primeira Campanha</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
         * { font-family: 'Inter', sans-serif; }
         
         .neon-glow {
-            box-shadow: 0 0 20px rgba(34, 197, 94, 0.5), 0 0 40px rgba(34, 197, 94, 0.3), 0 0 60px rgba(34, 197, 94, 0.2);
+            box-shadow: 0 0 20px rgba(37, 99, 235, 0.5), 0 0 40px rgba(37, 99, 235, 0.3), 0 0 60px rgba(37, 99, 235, 0.2);
         }
         
         .neon-text {
-            text-shadow: 0 0 10px rgba(34, 197, 94, 0.8), 0 0 20px rgba(34, 197, 94, 0.6), 0 0 30px rgba(34, 197, 94, 0.4);
+            text-shadow: 0 0 10px rgba(37, 99, 235, 0.8), 0 0 20px rgba(37, 99, 235, 0.6), 0 0 30px rgba(37, 99, 235, 0.4);
         }
         
         .slot-machine {
-            background: linear-gradient(45deg, #1a1a1a, #2a2a2a);
-            border: 2px solid #22c55e;
+            background: linear-gradient(45deg, #2563eb, #1d4ed8);
+            border: 2px solid #2563eb;
             animation: slotGlow 2s ease-in-out infinite alternate;
         }
         
         @keyframes slotGlow {
-            0% { box-shadow: 0 0 20px rgba(34, 197, 94, 0.3); }
-            100% { box-shadow: 0 0 30px rgba(34, 197, 94, 0.6); }
+            0% { box-shadow: 0 0 20px rgba(37, 99, 235, 0.3); }
+            100% { box-shadow: 0 0 30px rgba(37, 99, 235, 0.6); }
         }
         
         .floating {
@@ -42,12 +42,12 @@
         }
         
         @keyframes pulseGlow {
-            0%, 100% { box-shadow: 0 0 20px rgba(34, 197, 94, 0.4); }
-            50% { box-shadow: 0 0 30px rgba(34, 197, 94, 0.8); }
+            0%, 100% { box-shadow: 0 0 20px rgba(37, 99, 235, 0.4); }
+            50% { box-shadow: 0 0 30px rgba(37, 99, 235, 0.8); }
         }
         
         .bg-animated {
-            background: linear-gradient(-45deg, #0a0a0a, #1a1a1a, #0f1f0f, #1a1a1a);
+            background: linear-gradient(-45deg, #0c1d3c, #0d253f, #0c1d3c, #0d253f);
             background-size: 400% 400%;
             animation: gradientShift 8s ease infinite;
         }
@@ -91,7 +91,7 @@
         }
         
         .number-counter {
-            background: linear-gradient(45deg, #22c55e, #16a34a);
+            background: linear-gradient(45deg, #2563eb, #1d4ed8);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -99,7 +99,7 @@
         }
     </style>
 </head>
-<body class="bg-black text-white overflow-x-hidden">
+<body class="bg-neutral-950 text-white overflow-x-hidden">
     <!-- Animated Background -->
     <div class="fixed inset-0 bg-animated"></div>
     
@@ -111,9 +111,9 @@
                 <!-- iPhone Visual -->
                 <div class="mb-12 flex justify-center">
                     <div class="iphone-glow relative">
-                        <img 
-                            src="https://pfst.cf2.poecdn.net/base/image/94c6a85e0cf151e437e22a3f640381d96141699dc6a2715a1b90af0f2d0b46f9?w=1024&h=1024" 
-                            alt="iPhone 13 Meia-Noite" 
+                        <img
+                            src="https://pfst.cf2.poecdn.net/base/image/94c6a85e0cf151e437e22a3f640381d96141699dc6a2715a1b90af0f2d0b46f9?w=1024&h=1024"
+                            alt="iPhone 13 Meia-Noite"
                             class="w-72 h-auto max-w-full mx-auto drop-shadow-2xl"
                             style="filter: brightness(1.1) contrast(1.05);"
                         />
@@ -124,7 +124,7 @@
                 <h1 class="text-4xl md:text-6xl font-bold mb-6 neon-text">
                     🎁 A primeira campanha já começou
                 </h1>
-                <h2 class="text-2xl md:text-4xl font-bold mb-8 text-green-400">
+                <h2 class="text-2xl md:text-4xl font-bold mb-8 text-blue-400">
                     e pode começar por você
                 </h2>
                 
@@ -134,9 +134,9 @@
                 </p>
                 
                 <!-- CTA Button -->
-                <button id="mainCTA" class="bg-green-500 hover:bg-green-400 text-black font-bold text-lg md:text-xl px-8 py-4 rounded-full neon-glow pulse-glow transition-all duration-300 transform hover:scale-105">
+                <a id="mainCTA" href="https://r321.app/s/QXoOI7JL" target="_blank" rel="noopener noreferrer" class="bg-blue-600 hover:bg-blue-500 text-black font-bold text-lg md:text-xl px-8 py-4 rounded-full neon-glow pulse-glow transition-all duration-300 transform hover:scale-105">
                     QUERO PARTICIPAR COM R$1 AGORA
-                </button>
+                </a>
             </div>
         </section>
         
@@ -146,26 +146,26 @@
                 <div class="grid md:grid-cols-3 gap-8 mb-12">
                     <div class="slot-machine rounded-xl p-6 text-center">
                         <div class="text-4xl mb-4">📦</div>
-                        <h3 class="font-bold text-xl mb-2 text-green-400">Primeira entrega chegando...</h3>
+                        <h3 class="font-bold text-xl mb-2 text-blue-400">Primeira entrega chegando...</h3>
                         <p class="text-gray-300">Tudo documentado e transparente</p>
                     </div>
                     
                     <div class="slot-machine rounded-xl p-6 text-center">
                         <div class="text-4xl mb-4">🫱</div>
-                        <h3 class="font-bold text-xl mb-2 text-green-400">Vencedores anunciados publicamente</h3>
+                        <h3 class="font-bold text-xl mb-2 text-blue-400">Vencedores anunciados publicamente</h3>
                         <p class="text-gray-300">Zero chances de manipulação</p>
                     </div>
                     
                     <div class="slot-machine rounded-xl p-6 text-center">
                         <div class="text-4xl mb-4">🔒</div>
-                        <h3 class="font-bold text-xl mb-2 text-green-400">Acompanhamento em tempo real</h3>
+                        <h3 class="font-bold text-xl mb-2 text-blue-400">Acompanhamento em tempo real</h3>
                         <p class="text-gray-300">No grupo oficial</p>
                     </div>
                 </div>
                 
                 <div class="text-center">
                     <p class="text-lg text-gray-300 max-w-3xl mx-auto">
-                        A gente não esconde nada: é a 1ª edição, com tudo feito às claras. <span class="text-green-400 font-bold">Transparência real e premiação confirmada.</span>
+                        A gente não esconde nada: é a 1ª edição, com tudo feito às claras. <span class="text-blue-400 font-bold">Transparência real e premiação confirmada.</span>
                     </p>
                 </div>
             </div>
@@ -176,29 +176,19 @@
         <!-- Ranking Section -->
         <section class="py-16 px-4">
             <div class="max-w-4xl mx-auto">
-                <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center text-green-400">
+                <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center text-blue-400">
                     📈 Veja quem já tá dentro
                 </h2>
                 
                 <div class="bg-gray-800 rounded-xl p-6 mb-8">
-                    <div class="grid gap-4">
-                        <div class="flex justify-between items-center bg-gray-700 rounded-lg p-4">
-                            <span class="font-bold">João Silva</span>
-                            <span class="text-green-400 font-bold">2 números</span>
-                        </div>
-                        <div class="flex justify-between items-center bg-gray-700 rounded-lg p-4">
-                            <span class="font-bold">Ana Costa</span>
-                            <span class="text-green-400 font-bold">5 números</span>
-                        </div>
-                        <div class="flex justify-between items-center bg-gray-700 rounded-lg p-4">
-                            <span class="font-bold">Luana Santos</span>
-                            <span class="text-green-400 font-bold">1 número</span>
-                        </div>
-                    </div>
+                    <div id="rankingList" class="grid gap-4"></div>
                 </div>
-                
                 <p class="text-center text-gray-300">
-                    Ranking atual com prints dos compradores e prints fixados no grupo.
+                    Ranking atualizado diariamente. Prints das compras estão no grupo.
+                </p>
+                <p class="text-center text-gray-300 mt-4">
+                    Total de números vendidos: <span id="totalSold" class="font-bold text-blue-400">0</span><br>
+                    Total de participantes: <span id="participants" class="font-bold text-blue-400">0</span>
                 </p>
             </div>
         </section>
@@ -206,24 +196,24 @@
         <!-- Chat Prints Section -->
         <section class="py-16 px-4">
             <div class="max-w-4xl mx-auto">
-                <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center text-green-400">
+                <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center text-blue-400">
                     💬 O que estão falando
                 </h2>
                 
                 <div class="space-y-4" id="chatContainer">
                     <div class="chat-bubble bg-gray-800 rounded-xl p-4 max-w-md">
-                        <p class="text-gray-300">"Entrei agora, tô acompanhando tudo"</p>
-                        <span class="text-green-400 text-sm">- Maria, há 2 min</span>
+                        <p class="text-gray-300">"A energia aqui é contagiante! ✨"</p>
+                        <span class="text-blue-400 text-sm">- Maria, há 2 min</span>
                     </div>
-                    
+
                     <div class="chat-bubble bg-gray-800 rounded-xl p-4 max-w-md ml-auto">
-                        <p class="text-gray-300">"Tô dentro, bora ver se rola!"</p>
-                        <span class="text-green-400 text-sm">- Carlos, há 5 min</span>
+                        <p class="text-gray-300">"Transparência que inspira confiança!"</p>
+                        <span class="text-blue-400 text-sm">- Carlos, há 5 min</span>
                     </div>
-                    
+
                     <div class="chat-bubble bg-gray-800 rounded-xl p-4 max-w-md">
-                        <p class="text-gray-300">"Gostei da transparência, vou indicar"</p>
-                        <span class="text-green-400 text-sm">- Júlia, há 8 min</span>
+                        <p class="text-gray-300">"Convidei meus amigos, imperdível!"</p>
+                        <span class="text-blue-400 text-sm">- Júlia, há 8 min</span>
                     </div>
                 </div>
             </div>
@@ -232,8 +222,8 @@
         <!-- Urgency Counter Section -->
         <section class="py-16 px-4">
             <div class="max-w-4xl mx-auto text-center">
-                <h2 class="text-3xl md:text-4xl font-bold mb-8 text-green-400">
-                    ⏳ Primeiros 100 números disponíveis
+                <h2 class="text-3xl md:text-4xl font-bold mb-8 text-blue-400">
+                    ⏳ Primeiros 150 números disponíveis
                 </h2>
                 
                 <div class="bg-gray-800 rounded-xl p-8 mb-8">
@@ -251,7 +241,7 @@
                             <div class="text-gray-400">SEG</div>
                         </div>
                         <div class="text-center">
-                            <div class="number-counter text-3xl md:text-4xl font-bold" id="numbers">73</div>
+                            <div class="number-counter text-3xl md:text-4xl font-bold" id="numbers">150</div>
                             <div class="text-gray-400">RESTAM</div>
                         </div>
                     </div>
@@ -261,16 +251,16 @@
                     Atualizamos o ranking diariamente. Contador regressivo para fechamento do ciclo.
                 </p>
                 
-                <button class="bg-red-600 hover:bg-red-500 text-white font-bold text-xl px-8 py-4 rounded-full pulse-glow transition-all duration-300 transform hover:scale-105">
+                <a href="https://r321.app/s/QXoOI7JL" target="_blank" rel="noopener noreferrer" class="bg-red-600 hover:bg-red-500 text-white font-bold text-xl px-8 py-4 rounded-full pulse-glow transition-all duration-300 transform hover:scale-105">
                     GARANTIR MEU LUGAR AGORA
-                </button>
+                </a>
             </div>
         </section>
         
         <!-- Choice Section - Dynamic & Happy -->
-        <section class="py-16 px-4 bg-gradient-to-br from-green-900/30 to-yellow-900/30">
+        <section class="py-16 px-4 bg-gradient-to-br from-blue-900/30 to-purple-900/30">
             <div class="max-w-6xl mx-auto text-center">
-                <h2 class="text-3xl md:text-5xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-yellow-400">
+                <h2 class="text-3xl md:text-5xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400">
                     🎉 Qual é a sua?
                 </h2>
                 <p class="text-xl text-gray-300 mb-12">Duas maneiras de fazer parte dessa história!</p>
@@ -304,22 +294,22 @@
                                 <span class="text-gray-300">Ver o sorteio ao vivo</span>
                             </div>
                         </div>
-                        <button class="w-full bg-blue-500 hover:bg-blue-400 text-white font-bold py-4 px-6 rounded-xl transition-all duration-300 transform hover:scale-105 text-lg">
+                        <a href="https://chat.whatsapp.com/IZ4mfc6M84d3Q3kgJeNjrT?mode=ac_c" target="_blank" rel="noopener noreferrer" class="w-full bg-blue-500 hover:bg-blue-400 text-white font-bold py-4 px-6 rounded-xl transition-all duration-300 transform hover:scale-105 text-lg">
                             🚀 QUERO SÓ ACOMPANHAR
-                        </button>
+                        </a>
                         <p class="text-sm text-gray-400 mt-3">Grátis • Sem compromisso</p>
                     </div>
                     
                     <!-- Option 2 - Participate -->
-                    <div class="group relative bg-gradient-to-br from-green-800 to-yellow-800 rounded-2xl p-6 md:p-8 border-2 border-green-500 neon-glow hover:scale-105 hover:-rotate-1 transition-all duration-500">
+                    <div class="group relative bg-gradient-to-br from-blue-800 to-purple-800 rounded-2xl p-6 md:p-8 border-2 border-blue-500 neon-glow hover:scale-105 hover:-rotate-1 transition-all duration-500">
                         <div class="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                            <div class="bg-gradient-to-r from-green-500 to-yellow-500 text-black px-4 py-2 rounded-full text-sm font-bold animate-pulse">
+                            <div class="bg-gradient-to-r from-blue-500 to-purple-500 text-black px-4 py-2 rounded-full text-sm font-bold animate-pulse">
                                 🎯 PARTICIPAR
                             </div>
                         </div>
                         
                         <div class="text-6xl mb-6 group-hover:animate-spin">🎰</div>
-                        <h3 class="text-2xl md:text-3xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-yellow-400">Garantir Número Agora</h3>
+                        <h3 class="text-2xl md:text-3xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400">Garantir Número Agora</h3>
                         <div class="space-y-3 mb-8 text-left">
                             <div class="flex items-center space-x-3">
                                 <span class="text-yellow-400">🎫</span>
@@ -340,15 +330,15 @@
                         </div>
                         
                         <div class="mb-6">
-                            <div class="text-4xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-yellow-400 mb-2">
+                            <div class="text-4xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400 mb-2">
                                 R$ 1,00
                             </div>
                             <p class="text-gray-300 text-center">O preço de um sonho! 💫</p>
                         </div>
                         
-                        <button class="w-full bg-gradient-to-r from-green-500 to-yellow-500 hover:from-green-400 hover:to-yellow-400 text-black font-bold py-4 px-6 rounded-xl transition-all duration-300 transform hover:scale-105 text-lg pulse-glow">
+                        <a href="https://r321.app/s/QXoOI7JL" target="_blank" rel="noopener noreferrer" class="w-full bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-400 hover:to-purple-400 text-black font-bold py-4 px-6 rounded-xl transition-all duration-300 transform hover:scale-105 text-lg pulse-glow">
                             🔥 QUERO MEU NÚMERO AGORA!
-                        </button>
+                        </a>
                         <p class="text-sm text-gray-400 mt-3">Pagamento seguro • Confirmação instantânea</p>
                     </div>
                 </div>
@@ -358,7 +348,7 @@
                     <div class="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-8">
                         <div class="text-center">
                             <div class="text-3xl mb-2">😎</div>
-                            <p class="text-gray-300">Mais de <span class="text-green-400 font-bold" id="participantCount">127</span> pessoas já entraram!</p>
+                            <p class="text-gray-300">Mais de <span class="text-blue-400 font-bold" id="participantCount">127</span> pessoas já entraram!</p>
                         </div>
                         <div class="text-center">
                             <div class="text-3xl mb-2">⚡</div>
@@ -372,29 +362,29 @@
         <!-- Footer Guarantees -->
         <section class="py-16 px-4 border-t border-gray-800">
             <div class="max-w-4xl mx-auto">
-                <h2 class="text-3xl font-bold mb-8 text-center text-green-400">
+                <h2 class="text-3xl font-bold mb-8 text-center text-blue-400">
                     📲 Garantia e Transparência Total
                 </h2>
                 
                 <div class="grid md:grid-cols-2 gap-8 mb-8">
                     <div class="space-y-4">
                         <div class="flex items-center space-x-3">
-                            <span class="text-green-400 text-xl">✅</span>
+                            <span class="text-blue-400 text-xl">✅</span>
                             <span>1ª campanha pública</span>
                         </div>
                         <div class="flex items-center space-x-3">
-                            <span class="text-green-400 text-xl">✅</span>
+                            <span class="text-blue-400 text-xl">✅</span>
                             <span>Grupo aberto para todos acompanharem</span>
                         </div>
                     </div>
                     
                     <div class="space-y-4">
                         <div class="flex items-center space-x-3">
-                            <span class="text-green-400 text-xl">✅</span>
+                            <span class="text-blue-400 text-xl">✅</span>
                             <span>Nenhum dado sensível coletado</span>
                         </div>
                         <div class="flex items-center space-x-3">
-                            <span class="text-green-400 text-xl">✅</span>
+                            <span class="text-blue-400 text-xl">✅</span>
                             <span>Prêmio entregue com nota fiscal e rastreio</span>
                         </div>
                     </div>
@@ -427,7 +417,7 @@
         // Countdown Timer
         function updateCountdown() {
             const now = new Date().getTime();
-            const endDate = now + (24 * 60 * 60 * 1000); // 24 hours from now
+            const endDate = new Date('2024-12-31T23:59:59').getTime();
             const timeLeft = endDate - now;
             
             const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
@@ -444,7 +434,7 @@
         updateCountdown();
         
         // Simulate decreasing numbers
-        let numbersLeft = 73;
+        let numbersLeft = 150;
         setInterval(() => {
             if (numbersLeft > 30 && Math.random() < 0.3) {
                 numbersLeft--;
@@ -467,9 +457,9 @@
         
         // Add new chat messages periodically
         const chatMessages = [
-            { text: "Acabei de entrar! Parece legítimo", author: "Pedro", time: "agora" },
-            { text: "Primeira vez que vejo algo assim transparente", author: "Camila", time: "há 1 min" },
-            { text: "Tô dentro, já comprei 3 números", author: "Ricardo", time: "há 2 min" }
+            { text: "A energia aqui é contagiante! ✨", author: "Pedro", time: "agora" },
+            { text: "Transparência que inspira confiança!", author: "Camila", time: "há 1 min" },
+            { text: "Convidei a galera pra entrar também!", author: "Ricardo", time: "há 2 min" }
         ];
         
         let messageIndex = 0;
@@ -483,7 +473,7 @@
             
             messageElement.innerHTML = `
                 <p class="text-gray-300">"${message.text}"</p>
-                <span class="text-green-400 text-sm">- ${message.author}, ${message.time}</span>
+                <span class="text-blue-400 text-sm">- ${message.author}, ${message.time}</span>
             `;
             
             chatContainer.appendChild(messageElement);
@@ -496,11 +486,38 @@
             
             messageIndex++;
         }, 8000);
+
+        // Ranking data
+        const rankingData = [
+            { name: 'Ana Costa', numbers: 7 },
+            { name: 'João Silva', numbers: 5 },
+            { name: 'Luana Santos', numbers: 4 },
+            { name: 'Carlos Oliveira', numbers: 3 },
+            { name: 'Maria Fernandes', numbers: 2 }
+        ];
+
+        function renderRanking() {
+            const rankingList = document.getElementById('rankingList');
+            rankingList.innerHTML = '';
+            rankingData.sort((a, b) => b.numbers - a.numbers);
+            rankingData.forEach((p, i) => {
+                const item = document.createElement('div');
+                item.className = 'flex justify-between items-center bg-gray-700 rounded-lg p-4';
+                item.innerHTML = `
+                    <span class="font-bold">${i + 1}. ${p.name}</span>
+                    <span class="text-blue-400 font-bold">${p.numbers} número${p.numbers > 1 ? 's' : ''}</span>
+                `;
+                rankingList.appendChild(item);
+            });
+
+            const totalSold = rankingData.reduce((sum, p) => sum + p.numbers, 0);
+            document.getElementById('totalSold').textContent = totalSold;
+            document.getElementById('participants').textContent = rankingData.length;
+        }
+
+        renderRanking();
         
-        // Button click handlers
-        document.getElementById('mainCTA').addEventListener('click', () => {
-            alert('Redirecionando para participação...');
-        });
+
         
         // Add floating animation to elements
         const floatingElements = document.querySelectorAll('.slot-machine');
